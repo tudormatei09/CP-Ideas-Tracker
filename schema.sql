@@ -1,0 +1,20 @@
+﻿CREATE TABLE IF NOT EXISTS Users (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Username TEXT NOT NULL UNIQUE,
+    PasswordHash TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Problems (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    UserId INTEGER NOT NULL,
+    ProblemLink TEXT NOT NULL,
+    ProblemName TEXT,
+    Platform TEXT,
+    Idea TEXT NOT NULL,
+    Tags TEXT,
+    SourceUser TEXT,
+    IsImported INTEGER DEFAULT 0,
+    CreatedAt TEXT,
+    UpdatedAt TEXT,
+    FOREIGN KEY(UserId) REFERENCES Users(Id)
+);
