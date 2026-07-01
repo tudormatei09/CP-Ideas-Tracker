@@ -108,8 +108,7 @@
             // 
             // lblIdeaStatus
             // 
-            lblIdeaStatus.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblIdeaStatus.AutoSize = true;
+            lblIdeaStatus.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblIdeaStatus.BackColor = SystemColors.ButtonHighlight;
             lblIdeaStatus.Location = new Point(74, 198);
             lblIdeaStatus.Name = "lblIdeaStatus";
@@ -119,28 +118,31 @@
             // 
             // btnImportIdea
             // 
-            btnImportIdea.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnImportIdea.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnImportIdea.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             btnImportIdea.Location = new Point(74, 227);
             btnImportIdea.Name = "btnImportIdea";
             btnImportIdea.Size = new Size(75, 23);
             btnImportIdea.TabIndex = 8;
             btnImportIdea.Text = "Import .txt";
             btnImportIdea.UseVisualStyleBackColor = true;
+            btnImportIdea.Click += btnImportIdea_Click;
             // 
             // btnExportIdea
             // 
-            btnExportIdea.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnExportIdea.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnExportIdea.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             btnExportIdea.Location = new Point(155, 227);
             btnExportIdea.Name = "btnExportIdea";
             btnExportIdea.Size = new Size(75, 23);
             btnExportIdea.TabIndex = 9;
             btnExportIdea.Text = "Export .txt";
             btnExportIdea.UseVisualStyleBackColor = true;
+            btnExportIdea.Click += btnExportIdea_Click;
             // 
             // lblTags
             // 
             lblTags.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblTags.AutoSize = true;
             lblTags.Location = new Point(12, 270);
             lblTags.Name = "lblTags";
             lblTags.Size = new Size(34, 15);
@@ -157,23 +159,27 @@
             // 
             // btnSave
             // 
-            btnSave.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnSave.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnSave.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             btnSave.Location = new Point(12, 323);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(75, 23);
             btnSave.TabIndex = 12;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
-            btnCancel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnCancel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnCancel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             btnCancel.Location = new Point(93, 323);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
             btnCancel.TabIndex = 13;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // progressSave
             // 
@@ -191,14 +197,6 @@
             lblSaveStatus.Name = "lblSaveStatus";
             lblSaveStatus.Size = new Size(0, 15);
             lblSaveStatus.TabIndex = 15;
-
-
-            btnImportIdea.Click += btnImportIdea_Click;
-            btnExportIdea.Click += btnExportIdea_Click;
-            btnSave.Click += btnSave_Click;
-            btnCancel.Click += btnCancel_Click;
-
-
             // 
             // AddEditProblemForm
             // 
@@ -222,7 +220,7 @@
             Controls.Add(txtProblemLink);
             Controls.Add(lblLink);
             Name = "AddEditProblemForm";
-            Text = "AddEditProblemForm";
+            Text = "A";
             ResumeLayout(false);
             PerformLayout();
         }
