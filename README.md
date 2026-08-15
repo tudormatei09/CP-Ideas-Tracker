@@ -61,7 +61,7 @@ This keeps your implementation clean while your reasoning remains organized and 
 
 ### Login
 
-![Login](ScreenShots/Login System.png)
+![Login](ScreenShots/LoginSystem.png)
 
 ### Main Panel
 
@@ -73,7 +73,7 @@ This keeps your implementation clean while your reasoning remains organized and 
 
 ### Example Problem
 
-![Example Problem](ScreenShots/Panel with example problem.png)
+![Example Problem](ScreenShots/Panel-with-example-problem.png)
 
 ## 🚀 How It Works
 
